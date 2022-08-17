@@ -16,6 +16,7 @@ echo 'Installing Dependencies for Pebble SDK'
 # Ubuntu 18.04 (and other older distros)
 #--------------------------------------------------------------------------------------------------------
 # sudo apt update
+# sudo apt install gcc-arm-none-eabi
 # sudo apt install -y python2.7 python2.7-dev
 # curl https://bootstrap.pypa.io/get-pip.py --output get-pip.py
 # sudo python2 get-pip.py
@@ -29,6 +30,7 @@ echo 'Installing Dependencies for Pebble SDK'
 #--------------------------------------------------------------------------------------------------------
 sudo apt update
 sudo apt install wget curl git
+# sudo apt install gcc-arm-none-eabi
 
 # Python 2.7 + pip + virtualenv
 sudo apt install python2.7 python2.7-dev
