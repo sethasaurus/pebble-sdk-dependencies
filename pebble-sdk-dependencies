@@ -5,7 +5,7 @@
 #--------------------------------------------------------------------------------------------------------
 # Windows - Use Windows Subsystem for Linux (WSL)
 # Linux - Tested with Debian on Linux
-# Android - Tested with Userspace (takes up less space)
+# Android - Tested with UserLand (takes up less space)
 # and LinuxDeploy (Installs to .img file on storage)
 # Launch your preferred system and run this script.
 #--------------------------------------------------------------------------------------------------------
