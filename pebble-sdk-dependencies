@@ -1,0 +1,49 @@
+#--------------------------------------------------------------------------------------------------------
+# Dependencies for Pebble SDK Install:
+# Linux, Windows (WSL) or Android
+#  -Seth 16/08/2022
+#--------------------------------------------------------------------------------------------------------
+# Windows - Use Windows Subsystem for Linux (WSL)
+# Linux - Tested with Debian on Linux
+# Android - Tested with Userspace (takes up less space)
+# and LinuxDeploy (Installs to .img file on storage)
+# Launch your preferred system and run this script.
+#--------------------------------------------------------------------------------------------------------
+
+#--------------------------------------------------------------------------------------------------------
+echo 'Installing Dependencies for Pebble SDK'
+#--------------------------------------------------------------------------------------------------------
+# Ubuntu 18.04 (and other older distros)
+#--------------------------------------------------------------------------------------------------------
+# sudo apt update
+# sudo apt install -y python2.7 python2.7-dev
+# curl https://bootstrap.pypa.io/get-pip.py --output get-pip.py
+# sudo python2 get-pip.py
+# sudo -H python2.7 -m pip install -U pip setuptools wheel virtualenv
+# sudo apt install -y libssl1.0-dev nodejs-dev npm
+# (Not needed with SDK on Android (arm) -pebble-qemu won't work -yet)
+# sudo apt install -y libsdl1.2debian libfdt1 libpixman-1-0
+
+#--------------------------------------------------------------------------------------------------------
+# Ubuntu 20.04 (and other newer distros)
+#--------------------------------------------------------------------------------------------------------
+sudo apt update
+sudo apt install wget curl git
+
+# Python 2.7 + pip + virtualenv
+sudo apt install python2.7 python2.7-dev
+sudo apt install python-pip
+sudo -H python2.7 -m pip install -U pip setuptools wheel virtualenv
+
+# Node.js + npm (will take a few minutes if npm isn't already installed)
+sudo apt install libnode-dev npm 
+
+# Emulator dependencies
+(Not needed with SDK on Android (arm) -pebble-qemu won't work -yet)
+sudo apt install -y libsdl1.2debian libfdt1 libpixman-1-0
+
+#------------------------------------------------------------------------------------------------------------
+echo 'Done! Time to install SDK'
+echo 'Get the script: https://github.com/sethasaurus/pebble-sdk-install'
+#------------------------------------------------------------------------------------------------------------
+
