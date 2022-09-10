@@ -30,7 +30,7 @@ echo 'Installing Dependencies for Pebble SDK'
 #--------------------------------------------------------------------------------------------------------
 sudo apt update
 sudo apt install wget curl git
-# sudo apt install gcc-arm-none-eabi
+sudo apt install gcc-arm-none-eabi
 
 # Python 2.7 + pip + virtualenv
 sudo apt install python2.7 python2.7-dev
